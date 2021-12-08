@@ -4,9 +4,9 @@
 
 # Installation : 
 
-          git clone https://github.com/Deepanjalkumar/eframe.git
+          git clone https://github.com/Deepanjalkumar/binaryedge.git
           
-          cd eframe
+          cd binaryedge
           
           pip3 install -r requirements.txt
           
@@ -15,6 +15,10 @@
           uvicorn api:app --reload
           
           python3 manage.py runserver 8001
+          
+          cd docs/
+          
+          mkdocs serve -a 127.0.0.1:5000
            
            
 ## License

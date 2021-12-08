@@ -29,9 +29,19 @@ If you have any feedback, please reach out to us at Linkedin Deepanjal kumar
   
 ## Tech Stack
 
-**Programming Language:** PYTHON
+**DJANGO​
 
-**IDE:** VSCODE
+**PYTHON 3​
+
+**VS CODE​
+
+**HTML​
+
+**CSS AND JS​
+
+**FAST API​
+
+**Bootstrap v5
 
   
 ## Support
@@ -41,7 +51,7 @@ For support, contact me over linkeding Deepanjal kumar
   
 ## API Reference
 
-- [Hunter](https://hunter.io/)
+- [Binaryedge](https://binaryedge.io/)
 
   
 ## Authors

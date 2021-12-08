@@ -1,0 +1,43 @@
+{% extends 'application/base.html' %}
+
+{% block content %}
+
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col text-secondary">
+            <h5>DATALEAKS SEARCH</h5>
+            <form method="POST" action="/application/dataleaks">
+                {% csrf_token %}
+                <input type="search" name="domain" id="domain" class="form-control mb-2" placeholder="Search..." aria-label="Search">
+                <button class="btn btn-danger">Search</button>
+            </form>
+        </div>
+        <div class="col">
+            <h5>FILTER BY:</h5>
+            <p class="text-secondary">Allows you to search across multiple data breaches to see if any of your email addresses has been compromised. If you are affected, we recommend you change your password on the respective services. We don't provide access to the dataleaks files, passwords, or personal details.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    {% if dataleaks == "Not Found"  %}
+    {{dataleaks}}
+    {% else %}
+    <table class="table">
+        <thead>
+        </thead>
+        <tbody>
+            {% for leaks in dataleaks %}
+            <tr>
+                <th scope="row">{{leaks}}</th>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</div>
+
+<hr>
+{% endblock content %}
+
+

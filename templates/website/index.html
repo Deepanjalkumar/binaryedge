@@ -1,0 +1,144 @@
+{% extends 'website/base.html' %}
+
+{% block homeactive %}
+active
+{% endblock homeactive %}
+
+
+{% block content %}
+
+<div class="container-fluid px-0 section1">
+    <div data-aos="zoom-in">
+        <h1>We gather data for you !</h1>
+        <h3>We scan the entire public facing internet for you.</h3>
+    </div>
+</div>
+
+<div class="container py-4 mt-4 mb-4">
+    <div class="row">
+        <div class="col-4" data-aos="fade-right">
+            <h1>Intelligent Security</h1>
+            <h3 class="text-primary">
+                <b>Be Ready <br>
+                    Be Safe <br>
+                    Be Secure</b>
+            </h3>
+        </div>
+        <div class="col-7 text-secondary">
+
+            <p>
+                Organisations currently own a large number of internet exposed assets, some of them they are not even
+                aware exist.
+                <br>
+                <br>
+                Everyday, more and more companies expose their servers and services to the internet, increasing the
+                attack surface that can be targeted by hackers.
+                <br>
+                <br>
+                Today's rapidly expanding universe of sensors, cloud, remote access, and IoT devices has created high
+                levels of complexity that are impossible to secure without constant monitoring, both from within and
+                outside the organizations networks
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="text-center">
+    <h1><b>Our Data</b></h1>
+</div>
+
+<div class="container py-4 mt-4 mb-4">
+    <div class="row">
+        <div class="col text-secondary">
+            <p>
+                <b>
+                    We have built a distributed platform of scanners and honeypots, to acquire, classify and correlate
+                    different types of data.
+                    <br>
+                    <br>
+                    We use all of these datapoints to match those digital assets to an organization, allowing us to
+                    provide a global, up-to-date, view of organizations known and unknown assets.
+                    <br>
+                    <br>
+                    Read More about our Data and Features
+                </b>
+            </p>
+        </div>
+        <div class="col">
+            <img src="https://binaryedge.io/img/products/datapoints-org.png" width="100%" height="100%" alt="">
+        </div>
+    </div>
+
+
+</div>
+
+<div class="p-5 mb-4 bg-light rounded-3 section2">
+    <div class="container-fluid py-5">
+        <h1 class="text-center"><b>Every Month</b></h1>
+        <div class="row text-center">
+            <div class="col">
+                <h3>2,000,000,000</h3>
+                <h5>events</h5>
+            </div>
+            <div class="col">
+                <h3>200</h3>
+                <h5>Ports scanned</h5>
+            </div>
+            <div class="col">
+                <h3>1,000,000</h3>
+                <h5>Torrents Monitored</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-4 mt-4 mb-4">
+
+    <div class="row">
+        <div class="col">
+            <img src="https://www.binaryedge.io/img/products/two.png" width="100%" height="100%" alt="">
+        </div>
+        <div class="col text-secondary">
+            <h3><b>Access</b></h3>
+            <p><b>API and Web Access Our Portal Service allows you to query the data gathered in a easy and convenient way</b></p>
+            <br>
+            <br>
+            <h3>Enterprises</h3>
+            <p><b>Want access to our Realtime DataStreams, On-Demand Custom Scanning, or High Volume requests? </b></p>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .section1 {
+
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/900x350/?coding);
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+
+    .section2 {
+
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/900x350/?dark);
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+</style>
+
+
+{% endblock content %}

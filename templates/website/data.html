@@ -1,0 +1,101 @@
+{% extends 'website/base.html' %}
+
+
+{% block dataactive %}
+active
+{% endblock dataactive %}
+
+
+{% block content %}
+
+<div class="text-center text-secondary py-4 mt-4">
+<h1><b>Attack Surface Identification</b></h1>
+</div>
+
+
+<div class="container py-4 mt-4 mb-4">
+    <div class="row">
+        <div class="col">
+            We continuously collect and correlate data from internet accessible devices, allowing organizations to see what is their attack surface and what they are exposing to attackers.
+            <br>
+            <br>
+            <b>
+            Ports and Services Exposure <br>
+            Possible Vulnerabilities <br>
+            Accessible Remote Desktops <br>
+            Invalid SSL Certificates <br>
+            Misconfigured Network Shares <br>
+            Databases <br> 
+            <br>
+            </b>
+            We map these digital assets to Organizations to be able to show their Known and Unknown assets.
+
+
+
+        </div>
+        <div class="col">
+            <img src="https://www.binaryedge.io/img/products/datapoints-org.png" width="100%" height="100%" alt="">
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="text-center text-secondary py-4 mt-4">
+    <h1><b>HoneyPots / Sensors</b></h1>
+    </div>
+    
+    
+    <div class="container py-4 mt-4 mb-4">
+        <div class="row">
+           <div class="col text-secondary">
+               <p>
+                Our distributed honeypot network collects events worldwide across residential and enterprise providers to give BinaryEdge clients a realtime view of what is happening on the Internet.
+                <br>
+                <br>
+                We collect payloads, sources and classify these events, i.e. Malicious, Botnets, database scanners.
+                <br>
+                <br>
+                We also provide a fully automated anomaly detection system that allows us to understand in realtime when spikes occour in certain target countries, ports or IP addresses; this is important as it allows you to understand if the latest portscan you are seeing on your perimeter is targetting you or the entire internet, therefore allowing you to better focus on what you should be defending against.
+                <br>
+                <br>
+                Having access to the data from our honeypots also allows organizations to monitor their ranges for potentially malware infected traffic. 
+               </p>
+           </div>
+            <div class="col">
+                <img src="https://www.binaryedge.io/img/products/honeypots.png" width="100%" height="100%" alt="">
+            </div>
+        </div>
+    </div>
+<hr>
+
+
+<div class="text-center text-secondary py-4 mt-4">
+    <h1><b>Torrents / DHT Monitoring </b></h1>
+    </div>
+    
+    
+    <div class="container py-4 mt-4 mb-4">
+        <div class="row">
+           <div class="col text-secondary">
+              <p>
+                  We have several listeners monitoring torrent usage, allowing organizations to detect if their network space is being used to share or download Torrents.
+                  <br>
+                  <br>
+                  While Torrents can be a reliable and fast way to distribute content, it is also a common way to distribute malware, that might affect an organization networks and devices.
+                  <b>
+                  Data about the node serving the torrent
+                  Data about the peer downloading the torrent
+                  Data about the torrent, including: infohash, name, category
+                  </b>
+              </p>
+           </div>
+            <div class="col">
+                <img src="https://www.binaryedge.io/img/products/torrents.png" width="100%" height="100%" alt="">
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}
+

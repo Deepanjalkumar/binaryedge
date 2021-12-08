@@ -1,0 +1,10 @@
+peggy.j.irelan@intel.com
+peter.fang@intel.com
+guozhong.zhuang@intel.com
+maxim.levit@intel.com
+michael.steyer@intel.com
+jacob.olofsson@intel.com
+piotr.chmiel@intel.com
+victor.sun@intel.com
+jake.a.tatel@intel.com
+jakub.fornal@intel.com

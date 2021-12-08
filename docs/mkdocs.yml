@@ -1,0 +1,28 @@
+site_name: My Docs
+theme:
+  features:
+    - navigation.tabs
+    - navigation.expand
+  name: material
+nav:
+  - Home: index.md
+  - API V1 (Enterprise): apiv1.md
+  - API V2: apiv2.md
+  - Search Details:
+    - Host Search: search/host.md
+    - Image Search: search/image.md
+    - Torrents Search: search/torrents.md
+    - Sensors Search: search/sensors.md
+  - HTTP Status Messages: httpmsg.md
+  - Data Formats:
+    - Modules: data_formats/modules.md
+    - Torrent Data: data_formats/torrent_data.md
+    - Sensors Data: data_formats/sensors_data.md
+  - Sensors (Honeypots):
+    - Sensor Data: sensors/sensor_data.md
+    - Sensor Search: sensors/sensor_search.md
+    - Sensor Tag: sensors/sensor_tags.md
+    
+    
+
+    

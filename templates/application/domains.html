@@ -1,0 +1,41 @@
+{% extends 'application/base.html' %}
+
+{% block content %}
+
+<div class="container-fluid px-4 py-4 mt-4 mb-4">
+    <div class="row">
+        <div class="col text-secondary">
+            <h5>LOOK FOR SUBDOMAINS</h5>
+            <form method="POST" action="/application/domains/">
+            {% csrf_token %}
+                <input type="search" name="subdomain" id="subdomain" class="form-control mb-2" placeholder="Search..."
+                    aria-label="Search">
+                <button class="btn btn-danger">Search</button>
+            </form>
+        </div>
+        <div class="col">
+            <h5>FILTER BY:</h5>
+            <p class="text-secondary">Sub-domain enumeration. Discover hosts related to a specific domain. </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    {% if subdomain == "NOT FOUND" %}
+    {{subdomain}}
+    {% else %}
+    <table class="table">
+        <thead>
+        </thead>
+        <tbody>
+            {% for sub in subdomain %}
+            <tr>
+                <th scope="row">{{sub}}</th>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</div>
+
+{% endblock content %}

@@ -1,0 +1,179 @@
+{% extends 'application/base.html' %}
+
+{% block content %}
+
+<div class="container-fluid py-4 px-4">
+    <div class="row">
+        <div class="col text-secondary">
+            <p>BINARYEDGE.IO - WE SCAN THE ENTIRE INTERNET
+                <br>
+                TO HELP YOU UNDERSTAND WHAT IS BEING EXPOSED</p>
+
+                <form action="">
+                    <input type="search" class="form-control mb-2" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-danger">Search</button>
+                </form>
+        </div>
+        <div class="col">
+            <h3>FILTER BY: </h3>
+            <div class="row py-4">
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            ICS
+                        </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            DATABASE
+                        </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            IOT
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            MALWARE
+                        </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            WEBSERVER
+                        </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            CAMERA
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container-fluid px-4 py-4">
+    <div class="row">
+    <div class="col">
+        <h3>Quick Start</h3>
+        <p>Some quick example to get you started</p>
+        <table class="table table-hover  table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Field</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">FREE TEXT</th>
+                <td>Search for a specific text in multiple fields; However, You should specify fields for better results and filtering; text searches are case sensitive Multiple words should be between double-quotes.: e.g "Example Org Name"</td>
+              </tr>   
+              <tr>
+                <th scope="row">IP</th>
+                <td>target IP or CIDR (between double quotes), e.g ip:"149.202.178.130/16"</td>
+              </tr> 
+              <tr>
+                <th scope="row">Port</th>
+                <td>port you want to know about, e.g. port:80</td>
+              </tr> 
+              
+              <tr>
+                <th scope="row">Country</th>
+                <td>ISO Code for target country, e.g. country:FR</td>
+              </tr>      
+              
+              <tr>
+                <th scope="row">ASN</th>
+                <td>AS number of target, e.g. asn:1234</td>
+              </tr>
+              
+              <tr>
+                <th scope="row">type</th>
+                <td>BinaryEdge Modules type, e.g. type:mongodb </td>
+              </tr> 
+              
+              <tr>
+                <th scope="row">product</th>
+                <td>name of the product you are looking for, e.g. product:apache2</td>
+              </tr> 
+              
+              <tr>
+                <th scope="row">ipv6</th>
+                <td>Filter ipv6 results, e.g. ipv6:true or ipv6:false</td>
+              </tr>     
+              
+              <tr>
+                <th scope="row">tag</th>
+                <td>List of available tags: docs.binaryedge.io/search/#available-tags</td>
+              </tr>            
+            </tbody>
+          </table>
+    </div>
+    <div class="col">
+        <h1>EXAMPLES</h1>
+        <table class="table table-hover  table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Field</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">SSL from a Specific Organization Name</th>
+                <td>"Example Org" type:ssl</td>
+              </tr>   
+              <tr>
+                <th scope="row">CIDR 149.202.178.130/16 and Port 80</th>
+                <td>ip:"149.202.178.130/16" port:80</td>
+              </tr> 
+              <tr>
+                <th scope="row">France with Port 443</th>
+                <td>country:FR port:443</td>
+              </tr> 
+              
+              <tr>
+                <th scope="row">Product Dropbear sshd</th>
+                <td>product:"Dropbear sshd"</td>
+              </tr>      
+            </tbody>
+          </table>
+          <p class="text-secondary">
+            For more details and examples, please read docs.binaryedge.io/search/
+            <br>
+            <br>
+            For Historical data (Up to 6 Months) of an IP check: https://docs.binaryedge.io/api-v2/#v2queryiphistoricaltarget
+            <br>
+            <br>
+            Important: type:http is being deprecated, please use type:web. More details docs.binaryedge.io/search/#web
+          </p>
+    </div>
+</div>
+</div>
+
+{% endblock content %}
+
+

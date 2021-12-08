@@ -1,0 +1,220 @@
+{% extends 'application/base.html' %}
+
+{% block title %}
+TORRENTS
+{% endblock title %}
+
+{% block content %}
+
+<div class="container py-4 mt-4 mb-4 text-secondary">
+    <div class="row">
+        <div class="col">
+            <h1>Torrents Summary</h1>
+            <p>We have agents monitoring torrent usage.
+                Organizations usually don't allow torrents from their Networks.
+                Torrents are also a way to distribute Malware/Viruses.</p>
+        </div>
+        <div class="col"></div>
+        <div class="col">
+            <select class="form-control col-md-4 pull-right ng-pristine ng-valid ng-not-empty ng-touched"
+                ng-change="ctrl.reloadAll()" ng-model="ctrl.days" style="height: 48px; margin-bottom: 50px;">
+                <option value="1">1 day</option>
+                <option value="7" selected="selected">7 days</option>
+                <option value="15">15 days</option>
+                <option value="30">30 days</option>
+            </select>
+        </div>
+    </div>
+    <div class="row text-secondary">
+        <div class="col text">
+            <h2>Countries</h2>
+            <table class="table table-borderless text-secondary">
+                <tbody>
+                    <tr>
+                        <th scope="row">United States</th>
+                        <td>96,033</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Netherlands</th>
+                        <td>38,162</td>
+                    </tr><tr>
+                        <th scope="row">United Kingdom</th>
+                        <td>28,051</td>
+                    </tr><tr>
+                        <th scope="row">Japan</th>
+                        <td>22,541</td>
+                    </tr><tr>
+                        <th scope="row">Australia</th>
+                        <td>19,038</td>
+                    </tr><tr>
+                        <th scope="row">Canada</th>
+                        <td>18,570</td>
+                    </tr><tr>
+                        <th scope="row">France</th>
+                        <td>18,361</td>
+                    </tr><tr>
+                        <th scope="row">Russia Federation</th>
+                        <td>15,734</td>
+                    </tr><tr>
+                        <th scope="row">Germany</th>
+                        <td>14,551</td>
+                    </tr><tr>
+                        <th scope="row">India</th>
+                        <td>11,008</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h2>ASN</h2>
+            <table class="table table-borderless text-secondary">
+                <tbody>
+                    <tr>
+                        <th scope="row">16509 - AMAZON-02, US</th>
+                        <td>21,059</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9009 - M247, GB</th>
+                        <td>12,779</td>
+                    </tr><tr>
+                        <th scope="row">12876 - Online SAS, FR</th>
+                        <td>10,237</td>
+                    </tr><tr>
+                        <th scope="row">60781 - LEASEWEB-NL-AMS-01 Netherlands, NL</th>
+                        <td>9,347</td>
+                    </tr><tr>
+                        <th scope="row">174 - COGENT-174, US</th>
+                        <td>8,632</td>
+                    </tr><tr>
+                        <th scope="row">14618 - AMAZON-AES, US</th>
+                        <td>7,436</td>
+                    </tr><tr>
+                        <th scope="row">46562 - PERFORMIVE, US</th>
+                        <td>7,259</td>
+                    </tr><tr>
+                        <th scope="row">61317 - ASDETUK www.heficed.com, GB
+                        </th>
+                        <td>6,301</td>
+                    </tr><tr>
+                        <th scope="row">5089 - NTL, GB</th>
+                        <td>6,153</td>
+                    </tr><tr>
+                        <th scope="row">43350 - NFORCE, NL (NForce Entertainment B.V.)</th>
+                        <td>
+                            6,067</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h2>Reverse DNS</h2>
+            <table class="table table-borderless text-secondary">
+                <tbody>
+                    <tr>
+                        <th scope="row">amazonaws.com</th>
+                        <td>28,510</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">cdn77.com</th>
+                        <td>7,772</td>
+                    </tr><tr>
+                        <th scope="row">scw.cloud</th>
+                        <td>6,755</td>
+                    </tr><tr>
+                        <th scope="row">virginm.net</th>
+                        <td>6,091</td>
+                    </tr><tr>
+                        <th scope="row">comcast.net</th>
+                        <td>5,098</td>
+                    </tr><tr>
+                        <th scope="row">datapacket.com</th>
+                        <td>5,025</td>
+                    </tr><tr>
+                        <th scope="row">your-server.de</th>
+                        <td>4,582</td>
+                    </tr><tr>
+                        <th scope="row">digikabel.hu
+                        </th>
+                        <td>4,504</td>
+                    </tr><tr>
+                        <th scope="row">ocn.ne.jp</th>
+                        <td>4,184</td>
+                    </tr><tr>
+                        <th scope="row">example.com</th>
+                        <td>
+                            3,967</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row text-secondary">
+        <div class="col text">
+            <h2>IPs</h2>
+            <table class="table table-borderless text-secondary">
+                <tbody>
+                    <tr>
+                        <th scope="row">52.53.229.168</th>
+                        <td>6,237</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">54.215.207.56</th>
+                        <td>5,958</td>
+                    </tr><tr>
+                        <th scope="row">163.172.164.25</th>
+                        <td>4,521</td>
+                    </tr><tr>
+                        <th scope="row">217.197.180.152</th>
+                        <td>4,138</td>
+                    </tr><tr>
+                        <th scope="row">5.253.204.132</th>
+                        <td>2,731</td>
+                    </tr><tr>
+                        <th scope="row">51.15.84.8</th>
+                        <td>2,055</td>
+                    </tr><tr>
+                        <th scope="row">185.149.90.78</th>
+                        <td>1,747</td>
+                    </tr><tr>
+                        <th scope="row">93.30.115.206</th>
+                        <td>1,438</td>
+                    </tr><tr>
+                        <th scope="row">185.248.143.11</th>
+                        <td>1,236</td>
+                    </tr><tr>
+                        <th scope="row">5.79.108.236</th>
+                        <td>1,160</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h2>Categories</h2>
+            <table class="table table-borderless text-secondary">
+                <tbody>
+                    <tr>
+                        <th scope="row">Anime</th>
+                        <td>104,584</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Literature</th>
+                        <td>13,028</td>
+                    </tr><tr>
+                        <th scope="row">Audio</th>
+                        <td>8,838</td>
+                    </tr><tr>
+                        <th scope="row">Live Action</th>
+                        <td>6,995</td>
+                    </tr><tr>
+                        <th scope="row">Pictures</th>
+                        <td>208</td>
+                    </tr><tr>
+                        <th scope="row">Software</th>
+                        <td>141</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock content %}

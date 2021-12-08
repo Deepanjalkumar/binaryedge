@@ -1,0 +1,205 @@
+{% extends 'website/base.html' %}
+
+{% block pricingactive %}
+active
+{% endblock pricingactive %}
+
+
+{% block content %}
+
+<div class="container py-4 mt-4 mb-4">
+    <h1 class="text-center"><b>Pricing</b></h1>
+    <div class="row text-secondary ">
+        <div class="col-sm-12" style="vertical-align: middle;">
+          <table class="table table-condensed" id="pricing">
+            <thead>
+              <tr>
+                <th></th>
+                <th style="width: 15%" class="text-center h3">Free</th>
+                <th style="width: 15%" class="text-center h3">Starter</th>
+                <th style="width: 15%" class="text-center h3">Business</th>
+                <th style="width: 15%" class="text-center h3">Enterprise</th>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <th class="text-center">Free <br><a href="https://app.binaryedge.io/sign-up" class="btn-sm">Sign-Up</a> </th>
+                <th class="text-center">$10/month <br><a href="https://app.binaryedge.io/sign-up" class="btn-sm">Sign-Up</a> </th>
+                <th class="text-center">$500/month <br><a href="https://app.binaryedge.io/sign-up" class="btn-sm">Sign-Up</a> </th>
+                <th class="text-center">
+                  Contact for Pricing <br>
+                  <a href="mailto:sales@binaryedge.io?subject=BinaryEdge Product Enquiry - Custom Package" class="btn-sm">Contact Us</a>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="text-center h4">Features</th>
+                <th style="width: 15%" class="text-center"></th>
+                <th style="width: 15%" class="text-center"></th>
+                <th style="width: 15%" class="text-center"></th>
+                <th style="width: 15%" class="text-center"></th>
+              </tr>
+  
+              <tr>
+                <th scope="row">Queries (per month)</th>
+                <th class="text-center">
+                  250</th>
+                <th class="text-center">
+                  5,000
+                </th>
+                <th class="text-center">
+                  55,000
+                </th>
+                <th class="text-center">
+                  Unlimited
+                </th>
+              </tr>
+              <tr>
+              <th scope="row">Limit Pages per query</th>
+              <th class="text-center">
+                1000</th>
+              <th class="text-center">
+                1000
+              </th>
+              <th class="text-center">
+                1000
+              </th>
+              <th class="text-center">
+                Unlimited
+              </th>
+            </tr>            
+              <tr>
+                <th scope="row">Web &amp; API Access</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Host Data - IPs, Ports, Services</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Host Data - Historical (up to 6 Months)</th>
+                <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Remote Desktop Screenshots</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Sensors/Honeypot Data</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Torrents Data</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Domains - Subdomain enumeration</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Domains - Full Search</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Dataleaks - Email Search</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              
+              <tr>
+                <th scope="row">Dataleaks - Domain Search</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">On-Demand Scans</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Entity Mapping</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Enrichment and redistribution</th>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              <td class="text-center text-success"><i class="fas fa-check" aria-hidden="true"></i></td>
+              </tr>
+              <tr>
+                  <th scope="row">User License(s)</th>
+                  <td>1 User</td>
+                  <td>1 User</td>
+                  <td>1 Business</td>
+                  <td>Unlimited Users per Enterprise</td>
+              </tr>
+              <tr>
+                <th scope="row">Priority Support</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:green"></span></td>
+              </tr>
+              <tr>
+                <th scope="row">Support</th>
+                <td><a href="https://slack.binaryedge.io">Community Based</a></td>
+                <td>Email and <a href="https://slack.binaryedge.io">Public Slack</a></td>
+                <td>Email and <a href="https://slack.binaryedge.io">Public Slack</a></td>
+                <td>Email and Private Slack</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td></td>
+                <td><a href="https://app.binaryedge.io/sign-up" class="btn">Sign-Up</a></td>
+                <td colspan="2"><a href="https://app.binaryedge.io/sign-up" class="btn">Sign-Up</a></td>
+                <td><a href="mailto:sales@binaryedge.io?subject=BinaryEdge Product Enquiry - Custom Package" class="btn">Contact Us</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+</div>
+{% endblock content %}
+
+

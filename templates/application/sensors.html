@@ -1,0 +1,373 @@
+{% extends 'application/base.html' %}
+
+{% block title %}
+SENSORS
+{% endblock title %}
+
+{% block content %}
+<div class="container py-4 mt-4 mb-4 text-secondary">
+    <div class="row">
+        <div class="col">
+            <h5>Sensors/Honeypots Summary</h5>
+            <p>
+                Data gathered by our Honeypots - Who is probing the Internet? What are they scanning for? This is what
+                our HoneyPots detected.
+                .</p>
+        </div>
+        <div class="col"></div>
+        <div class="col">
+            <select class="form-control col-md-4 pull-right ng-pristine ng-valid ng-not-empty ng-touched"
+                ng-change="ctrl.reloadAll()" ng-model="ctrl.days" style="height: 48px; margin-bottom: 50px;">
+                <option value="1">1 day</option>
+                <option value="7" selected="selected">7 days</option>
+                <option value="15">15 days</option>
+                <option value="30">30 days</option>
+            </select>
+        </div>
+    </div>
+    <div class="row text-secondary py-4">
+        <div class="col text">
+            <h2>Countries</h2>
+            <table class="table table-borderless text-secondary">
+                <tbody>
+                    <tr>
+                        <th scope="row">russian federation</th>
+                        <td>940,930,634</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">china</th>
+                        <td>4,727,512</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> united states</th>
+                        <td>1,694,863</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">poland</th>
+                        <td>1,264,843</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">hong kong</th>
+                        <td>1,148,011</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">united kingdom</th>
+                        <td>494,014</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">germany</th>
+                        <td>214,904</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">netherlands</th>
+                        <td>188,173</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">france</th>
+                        <td>162,272</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">australia</th>
+                        <td>112,555</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h2>ASN</h2>
+            <table class="table table-borderless text-secondary">
+                <tbody>
+                    <tr>
+                        <th scope="row">207566 - HOSTWAY-AS, RU</th>
+                        <td>527,945,309</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">49505 - SELECTEL, RU</th>
+                        <td>358,341,879</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">47981 - UNASSIGNED</th>
+                        <td>35,462,210</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">44477 - WELLWEB, NL</th>
+                        <td>16,554,495</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14061 - DIGITALOCEAN-ASN, US
+                        </th>
+                        <td>1,007,491</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4837 - CHINA169-BACKBONE CHINA UNICOM China169 Backbone, CN</th>
+                        <td>
+                            906,525</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">45102 - CNNIC-ALIBABA-US-NET-AP Alibaba US Technology Co., Ltd., CN</th>
+                        <td>681,241</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">37963 - CNNIC-ALIBABA-CN-NET-AP Hangzhou Alibaba Advertising Co.,Ltd
+                        </th>
+                        <td>653,968</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">55990 - HWCSNET Huawei Cloud Service data center, CN</th>
+                        <td>512,804</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">202425 - INT-NETWORK, SC</th>
+                        <td>
+                            510,175</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h2>IPs</h2>
+            <table class="table table-borderless text-secondary">
+                <tbody>
+                    <tr>
+                        <th scope="row">91.241.19.96</th>
+                        <td>494,310,012</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">195.54.167.2</th>
+                        <td>136,104,926</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">176.113.115.160</th>
+                        <td>129,917,175</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">195.54.160.102</th>
+                        <td>92,043,808</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">193.32.164.12</th>
+                        <td>33,476,106</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">185.156.72.37</th>
+                        <td>33,382,530</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">94.232.42.14</th>
+                        <td>13,722,131</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">193.56.146.80
+                        </th>
+                        <td>3,509,662</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">185.156.72.29</th>
+                        <td>2,004,400</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">94.232.41.165</th>
+                        <td>
+                            1,566,066</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row text-secondary py-4">
+        <div class="col text">
+            <h2>Ports</h2>
+            <table class="table table-borderless text-secondary">
+                <tbody>
+                    <tr>
+                        <th scope="row">0/icmp</th>
+                        <td>3,432,305</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">445/tcp</th>
+                        <td>853,678</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">80/tcp</th>
+                        <td>667,556</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5900/tcp</th>
+                        <td>600,270</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">57760/tcp</th>
+                        <td>200,830</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">54567/tcp</th>
+                        <td>193,272</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">57025/tcp</th>
+                        <td>189,367</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">54664/tcp</th>
+                        <td>186,956</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">58553/tcp</th>
+                        <td>186,636</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">54978/tcp</th>
+                        <td>176,764</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h2>Tags</h2>
+            <table class="table table-borderless text-secondary">
+                <tbody>
+                    <tr>
+                        <th scope="row">RDP_SCANNER</th>
+                        <td>644,001,215</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">HTTP_SCANNER</th>
+                        <td>585,951</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">SMB_SCANNER</th>
+                        <td>415,831</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">SSL_SCANNER</th>
+                        <td>252,354</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">OPENPORTSTATS</th>
+                        <td>70,643</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">SSH_SCANNER</th>
+                        <td>32,554</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">BENIGN</th>
+                        <td>31,095</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">SIP_SCANNER</th>
+                        <td>18,948</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">VOIP_SCANNER</th>
+                        <td>18,948</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">MICROSOFT_SQL_SERVER</th>
+                        <td>17,597</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h2>HTTP Paths</h2>
+            <table class="table table-borderless text-secondary">
+                <tbody>
+                    <tr>
+                        <th scope="row">/</th>
+                        <td>289,654</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">/tmui/tmui/system/settings/redirect.jsp
+                        </th>
+                        <td>32,187</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">/favicon.ico</th>
+                        <td>26,363</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">/banner.html</th>
+                        <td>19,827</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">/mgmt/tm/util/bash</th>
+                        <td>16,366</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">/robots.txt</th>
+                        <td>
+                            7,688</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">/_ping</th>
+                        <td>
+                            4,525</td>
+                    </tr>
+
+
+                    <tr>
+                        <th scope="row">/v1.16/version</th>
+                        <td>
+                            4,386</td>
+                    </tr>
+
+
+                    <tr>
+                        <th scope="row">/c/version.js</th>
+                        <td>
+                            2,878
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="text-center text-secondary">Payloads</h1>
+    <table class="table table-striped table-hover">
+        <tbody>
+            <tr>
+                <th scope="row">\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:
+                    mstshash=administr\r\n\x01\x00\x08\x00\x00\x00\x00\x00</th>
+                <td>221,115,391</td>
+            </tr>
+            <tr>
+                <th scope="row">x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:
+                    mstshash=admin\r\n\x01\x00\x08\x00\x00\x00\x00\x00</th>
+                <td>83,021,425</td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    \x03\x00\x01t\x02\xf0\x80\x7fe\x82\x01h\x04\x01\x01\x04\x01\x01\x01\x01\xff0\x19\x02\x01"\x02\x01\x02\x02\x01\x00\x02\x01\x01\x02\x01\x00\x02\x01\x01\x02\x02\xff\xff\x02\x01\x020\x19\x02\x01\x01\x02\x01\x01\x02\x01\x01\x02\x01\x01\x02\x01\x00\x02\x01\x01\x02\x02\x04
+                    \x02\x01\x020\x1c\x02\x02\xff\xff\x02\x02\xff\xff\x02\x02\xff\xff\x02\x01\x01\x02\x01\x00\x02\x01\x01\x02\x02\xff\xff\x02\x01\x02\x04\x82\x01\x07\x00\x05\x00\x14|\x00\x01\x80\xfe\x00\x08\x00\x10\x00\x01\xc0\x00Duca\x80\xf0\x01\xc0\xd8\x00\x04\x00\x08\x00\x00\x04\x00\x03\x01\xca\x03\xaa\t\x04\x00\x00(\n\x00\x00W\x00i\x00n\x00d\x00o\x00w\x00s\x002\x000\x001\x009\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x0c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xca\x01\x00\x00\x00\x00\x00\x08\x00\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\xc0\x0c\x00\x0f\x00\x00\x00\x00\x00\x00\x00\x02\xc0\x0c\x00\x03\x00\x00\x00\x00\x00\x00\x00
+                </th>
+                <td>31,543,523</td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    \x03\x00\x01t\x02\xf0\x80\x7fe\x82\x01h\x04\x01\x01\x04\x01\x01\x01\x01\xff0\x19\x02\x01"\x02\x01\x02\x02\x01\x00\x02\x01\x01\x02\x01\x00\x02\x01\x01\x02\x02\xff\xff\x02\x01\x020\x19\x02\x01\x01\x02\x01\x01\x02\x01\x01\x02\x01\x01\x02\x01\x00\x02\x01\x01\x02\x02\x04
+                    \x02\x01\x020\x1c\x02\x02\xff\xff\x02\x02\xff\xff\x02\x02\xff\xff\x02\x01\x01\x02\x01\x00\x02\x01\x01\x02\x02\xff\xff\x02\x01\x02\x04\x82\x01\x07\x00\x05\x00\x14|\x00\x01\x80\xfe\x00\x08\x00\x10\x00\x01\xc0\x00Duca\x80\xf0\x01\xc0\xd8\x00\x04\x00\x08\x00\x00\x04\x00\x03\x01\xca\x03\xaa\t\x04\x00\x00(\n\x00\x00W\x00i\x00n\x00d\x00o\x00w\x00s\x001\x000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x0c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xca\x01\x00\x00\x00\x00\x00\x08\x00\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\xc0\x0c\x00\x0f\x00\x00\x00\x00\x00\x00\x00\x02\xc0\x0c\x00\x03\x00\x00\x00\x00\x00\x00\x00
+                </th>
+                <td>31,537,782</td>
+            </tr>
+            <tr>
+                <th scope="row">\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:
+                    mstshash=administr\r\n\x01\x00\x08\x00\x00\x00\x00\x00</th>
+                <td>221,115,391</td>
+            </tr>
+            <tr>
+                <th scope="row">\x03\x00\x00/*\xe0\x00\x00\x00\x00\x00Cookie:
+                    mstshash=administr\r\n\x01\x00\x08\x00\x00\x00\x00\x00</th>
+                <td>221,115,391</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+{% endblock content %}

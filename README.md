@@ -4,9 +4,9 @@
 
 # Installation : 
 
-          git clone https://github.com/Deepanjalkumar/eframe.git
+          git clone https://github.com/Deepanjalkumar/binaryedge.git
           
-          cd eframe
+          cd binaryedge
           
           pip3 install -r requirements.txt
           

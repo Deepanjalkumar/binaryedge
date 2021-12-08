@@ -15,6 +15,10 @@
           uvicorn api:app --reload
           
           python3 manage.py runserver 8001
+          
+          cd docs/
+          
+          mkdocs serve -a 127.0.0.1:5000
            
            
 ## License

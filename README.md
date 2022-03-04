@@ -2,7 +2,7 @@
 
 ![binaryedge](https://user-images.githubusercontent.com/55708909/145203128-d312eb9b-6090-4974-b102-59e222db2758.png)
 
-# https://binaryedge.herokuapp.com/ (Just Frontend version , Fork the repository for full usage.)
+# https://binaryedge.herokuapp.com/ (Just Frontend version , This Project is made as a POC to show how one can build the solution offered by Binaryedge Shodan, Zoomeye and Censys )
 
 # Installation : 
 
